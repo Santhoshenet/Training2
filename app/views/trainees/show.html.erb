@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @trainee.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @trainee.address %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @trainee.age %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @trainee.sex %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @trainee.dob %>
+</p>
+
+
+<%= link_to 'Edit', edit_trainee_path(@trainee) %> |
+<%= link_to 'Back', trainees_path %>

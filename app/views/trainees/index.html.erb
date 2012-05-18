@@ -1,0 +1,31 @@
+<h1>Listing trainees</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Age</th>
+    <th>Sex</th>
+    <th>Dob</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @trainees.each do |trainee| %>
+  <tr>
+    <td><%= trainee.name %></td>
+    <td><%= trainee.address %></td>
+    <td><%= trainee.age %></td>
+    <td><%= trainee.sex %></td>
+    <td><%= trainee.dob %></td>
+    <td><%= link_to 'Show', trainee %></td>
+    <td><%= link_to 'Edit', edit_trainee_path(trainee) %></td>
+    <td><%= link_to 'Destroy', trainee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Trainee', new_trainee_path %>

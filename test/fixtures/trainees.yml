@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyText
+  age: 1
+  sex: false
+  dob: 2012-05-18
+
+two:
+  name: MyString
+  address: MyText
+  age: 1
+  sex: false
+  dob: 2012-05-18
